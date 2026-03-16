@@ -1,0 +1,300 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+/* Enlève l'écart par défaut sur toute la page*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/* Space-between crée un espace entre le logo et les liens en utilisant Header, leur balise parent.*/
+body {
+  font-family: "Raleway", sans-serif;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+/* margin centre tout le bloc*/
+
+#logo {
+  width: 200px;
+  height: 90px;
+}
+/* ajuste l'image*/
+
+#onglet {
+  display: flex;
+  gap: 60px;
+  margin-right: 60px;
+}
+/*Le id onglet mets un écart entre les deux liens (gap) et un autre à droite (margin-right)*/
+
+.lien {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+/*text-decoration annule le surlignage des liens */
+
+.lien:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+/* hover veut dire survol de la souris sur le lien */
+
+h1 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+#title0 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 32px;
+}
+
+#nomVille {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+#geolocalisation {
+  border: none;
+  background-color: transparent;
+}
+
+#localisation {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 15px;
+  left: 2px;
+}
+
+#entree {
+  font-weight: bolder;
+  outline: none;
+  box-shadow: none;
+  height: 25px;
+  width: 135px;
+  padding: 19px 10px;
+  right: 3px;
+  border-color: transparent;
+  border-top: #f2f2f2 1px solid;
+  border-bottom: #f2f2f2 1px solid;
+}
+
+#entree:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+#rechercher {
+  height: 40px;
+  width: 100px;
+  border-start-end-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  position: relative;
+  right: 7px;
+  cursor: pointer;
+}
+
+/* effet de la position relative :  l’élément se déplace depuis sa place d'origine vers une autre direction */
+
+#filtre {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 25px;
+  margin-left: 12px;
+  font-weight: bolder;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 2px solid #d9d9d9;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  padding-right: 5px;
+}
+
+.homme,
+.flamme {
+  width: 10px;
+  height: 22px;
+}
+
+aside {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+#infoImage {
+  border-radius: 50%;
+  border: solid grey 1px;
+  margin-left: 32px;
+  width: 25px;
+  padding: 5px;
+}
+
+#resultats {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#hebergements {
+  width: 60%;
+  background-color: #f2f2f2;
+  padding-top: 16px;
+  border-radius: 25px;
+}
+
+#title1,
+#title2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 33px;
+}
+
+#cartesVille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 30px;
+  padding-left: 30px;
+  gap: 20px;
+}
+
+.hotel img {
+  width: 100%;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+.hotel {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  line-height: 1.5px;
+}
+
+.choix {
+  text-align: start;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+#afficher {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+  padding-top: 25px;
+}
+
+#resultatPopulaires {
+  height: 500px;
+  padding: 30px;
+}
+
+#populaires {
+  padding-top: 16px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+.populaire {
+  width: 420px;
+  height: 120px;
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  line-height: 1.5px;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/*margin-bottom créé un écart entre les trois hotels populaires*/
+
+.populaire img {
+  width: 25%;
+  object-fit: cover;
+  height: 120px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.carte h4 {
+  line-height: 1;
+}
+
+#choixActivité {
+  margin-top: 40px;
+}
+
+#title3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#activités {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.acti {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+#activités article {
+  border: groove 2px #f2f2f2;
+  border-radius: 25px;
+}
+
+#activités img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}

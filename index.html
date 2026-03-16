@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookie - Hébergement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100.900;1,100.900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="./image/Reservia.png" alt="logo" />
+      <div id="onglet">
+        <a class="lien hebergement" href="#resultats">Hébergements</a>
+        <a class="lien activité" href="#choixActivité">Activités</a>
+      </div>
+    </header>
+    <main>
+      <h1>Trouvez votre hébergement pours des vacances de rêve</h1>
+      <h2 id="title0">En plein centre ville ou en pleine nature</h2>
+      <form id="nomVille">
+        <button id="geolocalisation">
+          <img id="localisation" src="./image/Group15.png" alt="localisation" />
+        </button>
+        <input
+          type="text"
+          id="entree"
+          name="region"
+          placeholder="Marseille, France"
+        />
+        <button id="rechercher" type="submit">Rechercher</button>
+      </form>
+      <section id="filtre">
+        <h3 id="filtreTitle">Filtres</h3>
+        <button class="button one">
+          <img
+            class="logo eco"
+            src="./image/economie.png"
+            alt="filtre economique"
+          />
+          Economique
+        </button>
+        <button class="button two">
+          <img
+            class="logo homme"
+            src="./image/homme.png"
+            alt="filtre familial"
+          />
+          Familial
+        </button>
+        <button class="button three">
+          <img
+            class="logo coeur"
+            src="./image/coeur.png"
+            alt=" filtre romantique"
+          />
+          Romantique
+        </button>
+        <button class="button four">
+          <img
+            class="logo flamme"
+            src="./image/flamme.png"
+            alt="filtre pépite"
+          />
+          Nos pépites
+        </button>
+      </section>
+      <aside>
+        <h3 id="info">
+          <img id="infoImage" src="./image/info.png" alt="info" />
+          Plus de 500 logements sont disponibles dans cette ville
+        </h3>
+      </aside>
+      <section id="resultats">
+        <section id="hebergements">
+          <h2 id="title1">Hébergements à Marseille</h2>
+          <div id="cartesVille">
+            <article class="hotel port">
+              <img src="./image/image1.jpg" alt="Hôtel du port" />
+              <div class="choix un">
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de 52€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="hotel Amina">
+              <img src="./image/image2.jpg" alt="Hôtel Chez Amina" />
+              <div class="choix deux">
+                <h3>Hôtel Chez Amina</h3>
+                <p>Nuit à partir de 96€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="hotel mouettes">
+              <img src="./image/image3.jpg" alt="Hôtel Les mouettes" />
+              <div class="choix trois">
+                <h4>Hôtel Les mouettes</h4>
+                <p>Nuit à partir de 76€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="hotel mer">
+              <img src="./image/image4.jpg" alt="Hôtel de la mer" />
+              <div class="choix trois">
+                <h4>Hôtel de la mer</h4>
+                <p>Nuit à partir de 46€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="hotel canebiere">
+              <img src="./image/image5.jpg" alt="Auberge La Canebière" />
+              <div class="choix cinq">
+                <h4>Auberge La Canebière</h4>
+                <p>Nuit à partir de 25€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="hotel panier">
+              <img src="./image/image6.jpg" alt="Auberge Le Panier" />
+              <div class="choix six">
+                <h4>Auberge Le Panier</h4>
+                <p>Nuit à partir de 23€</p>
+                <span></span>
+              </div>
+            </article>
+            <span id="afficher"> Afficher plus </span>
+          </div>
+        </section>
+        <section id="populaires">
+          <h2 id="title2">Les plus populaires</h2>
+          <div id="resultatPopulaires">
+            <article class="populaire soleil">
+              <img src="./image/image7.jpg" alt="Hôtel le soleil du matin" />
+              <div class="carte">
+                <h3>Hôtel le soleil du matin</h3>
+                <p>Nuit à partir de 25€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="populaire coeur">
+              <img
+                src="./image/image8.jpg"
+                alt="Chambre d'hôtel au coeur de l'eau"
+              />
+              <div class="carte">
+                <h3>Chambre d'hôtel au coeur de l'eau</h3>
+                <p>Nuit à partir de 71€</p>
+                <span></span>
+              </div>
+            </article>
+            <article class="populaire bleu">
+              <img src="./image/image9.jpg" alt="Hôtel bleu & blanc" />
+              <div class="carte">
+                <h3>Hôtel bleu & blanc</h3>
+                <p>Nuit à partir de 68€</p>
+                <span></span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <section id="choixActivité">
+        <h2 id="title3">Activités à Marseille</h2>
+        <section id="activités">
+          <article>
+            <img class="acti port" src="./image/image11.jpg" alt="Vieux-Port" />
+            <h3>Vieux-Port</h3>
+          </article>
+          <article>
+            <img
+              class="acti fort"
+              src="./image/image10.jpg"
+              alt="Fort de Pomegues"
+            />
+            <h3>Fort de Pomegues</h3>
+          </article>
+          <article>
+            <img
+              class="acti parc"
+              src="./image/image13.jpg"
+              alt="Parc national des Calanques"
+            />
+            <h3>Parc national des Calanques</h3>
+          </article>
+          <article>
+            <img
+              class="acti dame"
+              src="./image/image12.jpg"
+              alt="Notre-Dame-de-la-Garde"
+            />
+            <h3>Notre-Dame-de-la-Garde</h3>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
