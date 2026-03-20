@@ -227,14 +227,12 @@ aside {
 }
 
 #resultatPopulaires {
-  height: 500px;
   padding: 20px 40px;
 }
 
 #populaires {
   background-color: #f2f2f2;
   border-radius: 20px;
-  width: 35%;
 }
 
 .populaire {
@@ -336,15 +334,22 @@ footer section {
     display: flex;
     flex-direction: column;
   }
-  #hebergements {
+  #hebergements,
+  #populaires {
     width: 100%;
   }
-  #populaires {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
+  #resultatPopulaires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: auto;
+    padding: 20px 30px 30px 30px;
   }
+}
+
+#resultatPopulaires article {
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 768px) {
